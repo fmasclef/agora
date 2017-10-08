@@ -1,0 +1,24 @@
+// Absolute Center Spinner
+.app-loader
+  animation: sk-rotateplane 1.2s infinite ease-in-out
+  background-color: $color-loader
+  bottom: 0
+  height: 4em
+  left: 0
+  margin: auto
+  position: fixed
+  right: 0
+  top: 0
+  width: 4em
+  z-index: 999
+
+// Animation
+@keyframes sk-rotateplane
+  0%
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+
+  50%
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+
+  100%
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)

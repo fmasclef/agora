@@ -1,0 +1,21 @@
+{
+  "log": {
+    "level": "info",
+    "console": {
+      "enabled": true
+    },
+    "file": {
+      "enabled": false,
+      "filename": "/var/log/porta/porta.log",
+      "size": 1024,
+      "files": 10
+    }
+  },
+  "server": {
+    "port": 8009,
+    "proxy": "http://...",
+    "threads": 2,
+    "url": "http://localhost:8009"
+  }
+}
+
