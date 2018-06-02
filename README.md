@@ -35,7 +35,7 @@ Head to `app/js` and start writting your `App.preact.js` and its components.
 Webpack provides *hot module reloading* thru its embeded webserver. Start this
 development server using:
 
-    $ NODE_ENV=development npm start
+    $ npm run app
 
 Customize your app's stylesheet by adding Sass formated files in `app/sass`. The
 `app/sass/app.saas` file is imported from the `app/js/bootlader.js` file. That
@@ -50,7 +50,12 @@ You can customize or replace it by altering `app/sass/modules/app-loader.sass`.
 
 Once you're done with developing, package a production ready webapp:
 
-    $ NODE_ENV=production npm run build
+    $ npm run build
+
+Please note that the  `build:dev`  npm script  is available  when compiling  for
+development. In that case, there's no SRI or minifying.
+
+    $ npm run build:dev
 
 This will populate your `dist` folder with various assets:
 
@@ -89,7 +94,7 @@ component. Period. So go on with `npm i` in production flavor:
 
 Now, you can start agora:
 
-    $ NODE_ENV=production node server/server.js
+    $ npm run server
 
 agora will serve files from the `dist` folder. Its default *GET /* route renders
 the `index.html` file which loads your PReact webapp.
